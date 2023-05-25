@@ -1,0 +1,50 @@
+
+
+Welcome to Cloud Shell! Type "help" to get started.
+Your Cloud Platform project in this session is set to sairaj123.
+Use “gcloud config set project [PROJECT_ID]” to change to a different project.
+sairajs_t20013@cloudshell:~ (sairaj123)$ gcloud projects list
+PROJECT_ID: sairaj123
+NAME: sairaj123
+PROJECT_NUMBER: 690009324739
+
+PROJECT_ID: summer-artwork-387105
+NAME: My Project 86778
+PROJECT_NUMBER: 916120731543
+sairajs_t20013@cloudshell:~ (sairaj123)$ gcloud config set project sairaj123
+Updated property [core/project].
+sairajs_t20013@cloudshell:~ (sairaj123)$ git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+fatal: destination path 'python-docs-samples' already exists and is not an empty directory.
+sairajs_t20013@cloudshell:~ (sairaj123)$ ls
+python-docs-samples  README-cloudshell.txt
+sairajs_t20013@cloudshell:~ (sairaj123)$ cd python-docs-samples/
+sairajs_t20013@cloudshell:~/python-docs-samples (sairaj123)$ ls
+appengine           billing             compute                  datalabeling         dns                       functions      kubernetes_engine  memorystore          people-and-planet-ai  renovate.json   servicedirectory  texttospeech
+asset               blog                contact-center-insights  dataproc             documentai                generative_ai  language           ml_engine            privateca             retail          spanner           trace
+auth                cdn                 container                data-science-onramp  endpoints                 healthcare     LICENSE            monitoring           profiler              run             speech            translate
+AUTHORING_GUIDE.md  cloudbuild          containeranalysis        datastore            enterpriseknowledgegraph  iam            logging            notebooks            pubsub                scheduler       storage           video
+automl              cloud-sql           contentwarehouse         dialogflow           error_reporting           iap            MAC_SETUP.md       noxfile_config.py    pubsublite            scripts         storagetransfer   vision
+batch               cloud_tasks         CONTRIBUTING.md          dialogflow-cx        eventarc                  iot            media              noxfile-template.py  pytest.ini            secretmanager   tables            webrisk
+bigquery            CODE_OF_CONDUCT.md  datacatalog              discoveryengine      favicon.ico               jobs           media_cdn          opencensus           README.md             securitycenter  talent            workflows
+bigquery_storage    composer            dataflow                 dlp                  firestore                 kms            media-translation  optimization         recaptcha_enterprise  SECURITY.md     testing
+sairajs_t20013@cloudshell:~/python-docs-samples (sairaj123)$ cd appengine/
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine (sairaj123)$ ls
+flexible  flexible_python37_and_earlier  standard  standard_python3
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine (sairaj123)$ cd standard_python3/
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine/standard_python3 (sairaj123)$ ls
+bigquery  building-an-app  bundled-services  cloud_debugger  cloudsql  custom-server  django  hello_world  migration  pubsub  redis  spanner  warmup
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine/standard_python3 (sairaj123)$ 
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine/standard_python3 (sairaj123)$ cd hello_world/
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine/standard_python3/hello_world (sairaj123)$ ls
+app.yaml  main.py  main_test.py  requirements-test.txt  requirements.txt
+sairajs_t20013@cloudshell:~/python-docs-samples/appengine/standard_python3/hello_world (sairaj123)$ python3 main.py
+ * Serving Flask app 'main'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 294-823-240
+127.0.0.1 - - [25/May/2023 13:04:16] "GET /?authuser=0&redirectedPreviously=true HTTP/1.1" 200 -
+127.0.0.1 - - [25/May/2023 13:04:16] "GET /favicon.ico HTTP/1.1" 404 -
